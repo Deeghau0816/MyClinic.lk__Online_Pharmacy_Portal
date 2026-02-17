@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/payment2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.payment-container {
+    background-color: #ffffff9d;
+    width: 400px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+h3 {
+    text-align: left;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Style for the logos */
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logos img {
+    width: 60px;  /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 10px;
+}
+
+.logos input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+    .payment-container {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .logos img {
+        width: 60px; /* Smaller logos for smaller screens */
+    }
+}

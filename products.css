@@ -1,0 +1,278 @@
+body{
+    width: 100%;
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(images/b4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header-nav div{  
+    background-color: aliceblue;
+ }
+ 
+ .header-nav{
+    width: 100%;
+    display: block;
+    background-color: aliceblue;
+ }
+ 
+ .header-main{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    justify-content: space-between;
+ }
+ 
+ .header-nav-logo{ 
+    width: fit-content;
+    height: 50%;
+    padding-left: 0px;
+    display: flex;
+ }
+ 
+ .header-nav-logo img{
+    height: 55px;
+    align-self: center;
+ }
+ 
+ .header-main ul{
+    list-style: none;
+    margin-left: 10px;
+ }
+ 
+ .header-main ul li{
+    display: inline;
+    float: left;
+ }
+ 
+ .header-main ul li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 0px 10px 0px 10px;
+ }
+ 
+ .header-main ul li ::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 7px;
+    background-color: black;
+    transition: 0.4s;
+ }
+ 
+ .header-main ul li:hover::before{
+    width: 100%;
+ }
+ 
+ 
+ .header-main ul li a:hover{
+    color: rgb(233, 8, 113);
+ }
+ 
+ .header-nav-logo a i{
+    color: black;
+    padding-left: 100%;
+    padding-top: 120%;
+    height: 10%;
+    width: 20%;
+    
+ }
+ 
+ .header-nav-logo a i:hover{
+    color: rgb(255, 145, 196);
+ }
+ 
+ .header-main-sign{
+    padding-left: 1280px;
+    justify-content: space-between;
+    display: block;
+ }
+ 
+ .header-main-sign ul li a{
+    display: flex;
+ }
+
+
+/*Products showing*/
+.product-display{
+    background-color: rgba(255, 255, 255, 0.475);
+}
+ .products .box-container{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 10px;
+    justify-content: center;
+ }
+ 
+ .products .box-container .box{
+    text-align: center;
+   
+ }
+ 
+ .products .box-container .box img{
+    height: 280px;
+    width: 250px;
+ }
+
+ .products .box-container .box img:hover{
+   transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+ 
+ .products .box-container .box h3{
+    margin:1px 0;
+    font-size: 20px;
+    color:black;
+ }
+ 
+ .products .box-container .box .price{
+    font-size: 15px;
+    color: black;
+ }
+
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(221, 157, 234);
+    font-style: bold;
+    border-style: groove;
+}
+
+.btn:hover{
+    background-color: rgb(143, 255, 99);
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 1%;
+    padding-left: 2%;
+    font-size: 36px;
+    color: #323232;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.product-display{
+    padding-top: 2%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0.64);
+    margin-left: 2%;
+    padding-left: 2%;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    border-radius: 10px;
+}
+
+form input .update{
+    background-color: aquamarine;
+}
+
+
+/*PHP message css*/
+.message{
+   background-color: rgb(165, 165, 255);
+   position: sticky;
+   top:0; left:0;
+   z-index: 10000;
+   border-radius: .5rem;
+   background-color: white;
+   padding:1.5rem 2rem;
+   margin:0 auto;
+   max-width: 1000px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap:1.5rem;
+}
+
+.message span{
+   font-size: 2rem;
+   color: black;
+}
+
+.message i{
+   font-size: 2.5rem;
+   color: black;
+   cursor: pointer;
+}
+
+.message i:hover{
+   color: red;
+}
+
+/*Footer Css*/
+.footer{
+   font-family: 'Times New Roman', Times, serif;
+   font-style: bold;
+   border: none;
+   background-color: rgba(255, 178, 233, 0.804);
+}
+
+.footer h4{
+   font-size: 18px;
+   
+}
+.frow{
+   display:flex;
+   flex-wrap:wrap;
+}
+
+.footer-column {
+ width: 25%;
+ padding:0 15px;
+}
+
+
+.footer-column ul li a{
+   font-size: 16px;
+   color:black;
+   text-decoration: none;
+   font-weight: 200;
+   display:block;
+}
+
+.footer-column ul li a:hover{
+   color:white;
+   transition: 0.5s;
+}
+
+.SocialIcons a{
+   text-decoration: none;
+   background-color: none;
+   margin: 15px;
+}
+
+.SocialIcons a i{
+   font-size: 0.7cm;
+   color:black;
+}
+
+.SocialIcons a:hover i{
+   color: white;
+   transition:0.5s;
+}
+
+.footerBottom{
+   background-color: black;
+   padding:0.5px;
+   text-align: left;
+   padding-left: 15px;
+}
+
+.footerBottom p{
+   font-size: 13px;
+   color:white;
+   letter-spacing: 0.6px;
+}
+
